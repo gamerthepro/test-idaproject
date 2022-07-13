@@ -1,5 +1,6 @@
 <template>
 	<div class="main-wrapper"></div>
+	<p>{{title}}</p>
 </template>
 
 <script>
@@ -9,7 +10,7 @@
 		props: {},
 		data() {
 			return {
-				title: "main"
+				title: "hello Artem"
 			}
 		},
 		computed: {},
@@ -22,7 +23,7 @@
 </script>
 
 <style>
-	.main {
+	.main-wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: center;
