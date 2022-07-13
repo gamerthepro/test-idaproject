@@ -1,33 +1,37 @@
 <template>
-	<div class="main-wrapper"></div>
-	<p>{{title}}</p>
+	<div class="main-wrapper">
+		<valid-form />
+		<catalog-list />
+	</div>
 </template>
 
 <script>
+	import catalogList from './catalog-list.vue'
+	import validForm from './valid-form.vue'
+
 	export default {
 		name: "main-wrapper",
-		components: {},
-		props: {},
-		data() {
-			return {
-				title: "hello Artem"
-			}
+		components: {
+			catalogList,
+			validForm
 		},
+		props: {},
+		data() {},
 		computed: {},
 		methods: {},
 		watch: {},
-		mounted() {
-			console.log('hello Artem')
-		}
+		mounted() {}
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.main-wrapper {
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		max-width: 1440px;
 		margin: 0 auto;
+		background: rgba(255, 254, 251, 0.8);
 	}
 </style>

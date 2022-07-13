@@ -1,5 +1,6 @@
 <template>
-	<div class="catalog-item"></div>
+	<div class="catalog-item">
+	</div>
 </template>
 
 <script>
