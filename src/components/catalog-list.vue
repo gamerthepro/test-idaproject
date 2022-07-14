@@ -55,6 +55,7 @@
 		}
 		.list__button:hover {
 			background: #EEEEEE;
+			cursor: pointer;
 		}
 		.list__container {
 			display: grid;

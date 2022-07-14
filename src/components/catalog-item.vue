@@ -64,4 +64,8 @@
 			margin: 16px 16px 24px 16px;
 		}
 	}
+	.catalog-item:hover {
+		opacity: .8;
+		cursor: pointer;
+	}
 </style>
