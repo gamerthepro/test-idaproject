@@ -28,10 +28,11 @@
 	.main-wrapper {
 		display: flex;
 		flex-direction: row;
+		align-items: flex-start;
 		justify-content: center;
-		align-items: center;
 		max-width: 1440px;
-		margin: 0 auto;
+		padding: 32px;
+		margin: 0;
 		background: rgba(255, 254, 251, 0.8);
 	}
 </style>

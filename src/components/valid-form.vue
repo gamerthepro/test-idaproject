@@ -2,7 +2,7 @@
 	<div class="valid-form">
 		<h1 class="valid-form__title">Добавление товара</h1>
 		<form class="form">
-			<P class="form__name">Наименование товара</P>
+			<P class="form__name form__name-mark-on">Наименование товара</P>
 			<input class="form__input" 
 			type="name"
 			placeholder="Введите наименование товара"
@@ -12,12 +12,12 @@
 			type="text"
 			placeholder="Введите описание товара"
 			></textarea>
-			<P class="form__name">Ссылка на изображение товара</P>
+			<P class="form__name form__name-mark-on">Ссылка на изображение товара</P>
 			<input class="form__input" 
 			type="url-image"
 			placeholder="Введите ссылку"
 			>
-			<P class="form__name">Цена товара</P>
+			<P class="form__name form__name-mark-on">Цена товара</P>
 			<input class="form__input" 
 			type="text"
 			placeholder="Введите цену"
@@ -57,7 +57,8 @@
 			color: #3F3F3F;
 		}
 		.form {
-			display: block;
+			display: flex;
+			flex-direction: column;
 			align-items: flex-start;
 			padding: 24px;
 			background-color: #FFFEFB;
@@ -73,13 +74,13 @@
 				color: #49485E;
 				margin: 0;
 			}
-			.form__name::before {
+			.form__name-mark-on::before {
 				content: "";
 				position: absolute;
+				right: -4px;
+				top: 0px;
 				width: 4px;
 				height: 4px;
-				left: 109px;
-				top: 386px;
 				background: #FF8484;
 				border-radius: 4px;
 			}
@@ -112,7 +113,9 @@
 			.form__button {
 				width: 284px;
 				height: 36px;
+				color: #B4B4B4;
 				background: #EEEEEE;
+				margin-top: 8px;
 				border-radius: 10px;
 				font-family: 'Inter';
 				font-style: normal;
@@ -121,7 +124,6 @@
 				line-height: 15px;
 				text-align: center;
 				letter-spacing: -0.02em;
-				color: #B4B4B4;
 				border: none;
 				cursor: pointer;
 			}
