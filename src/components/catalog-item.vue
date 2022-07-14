@@ -32,8 +32,8 @@
 		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
 		border-radius: 4px;
 		.item__image {
-			width: 332px;
-			height: 200px;
+			max-width: 332px;
+			min-height: 200px;
 		}
 		.item__name {
 			font-family: 'Source Sans Pro';

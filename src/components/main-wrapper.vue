@@ -28,11 +28,16 @@
 	.main-wrapper {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
 		align-items: flex-start;
-		justify-content: center;
-		max-width: 1440px;
 		padding: 32px;
-		margin: 0;
+		margin: 0 auto;
 		background: rgba(255, 254, 251, 0.8);
 	}
+	@media screen and (max-width: 767px) {
+			.main-wrapper {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
 </style>
